@@ -1,0 +1,50 @@
+create database ACADEMICO;
+create table IDENTIFICADOR(CI int primary key, NombreCompleto varchar(40), FechaNacimiento date, LugarResidencia varchar(2));
+create table USUARIO(CI int primary key,Clave int);
+insert into identificador values(12345678,'Juan Perez Ramirez','1993-05-23','01');
+insert into identificador values(87654321,'Carlos Quispe Flores','1995-03-02','04');
+insert into identificador values(12378956,'Maria Laura Lopez','1997-06-09','03');
+insert into identificador values(12345600,'Anna Huanca Mamani','1999-04-11','02');
+insert into identificador values(1234567,'Kevin Choque Pinto','2001-02-17','09');
+insert into identificador values(12345777,'Luis Patzi Gutierrez','1991-06-05','05');
+insert into identificador values(87654515,'Laura Cosme Quispe','1992-02-30','06');
+insert into identificador values(1237154,'Jose Torrez Nina','1994-12-25','07');
+insert into identificador values(22345200,'Yola Callisaya Cari','1996-11-01','08');
+insert into identificador values(1234599,'Fernando Condori Arruquipa','1997-04-11','02');
+insert into usuario values(12345678,123);
+insert into usuario values(87654321,123);
+insert into usuario values(12378956,123);
+insert into usuario values(12345600,123);
+insert into usuario values(1234567,123);
+insert into usuario values(12345777,321);
+insert into usuario values(87654515,321);
+insert into usuario values(1237154,321);
+insert into usuario values(22345200,321);
+insert into usuario values(1234599,321);
+SELECT count(*) as c FROM usuario WHERE ci=12345678 and Clave=123
+create table notamateria (Materia varchar(40) not null, CI int not null,Nota int, FOREIGN KEY (CI) References identificador(CI) )
+
+insert into notamateria values('MAT-124',12378956,99);
+insert into notamateria values('FIS-132',12378956,61);
+insert into notamateria values('INF-121',12345600,67);
+insert into notamateria values('MAT-124',12345600,55);
+
+
+
+insert into notamateria values('FIS-132',1234567,66);
+insert into notamateria values('INF-121',12345777,51);
+insert into notamateria values('MAT-124',12345678,55);
+insert into notamateria values('FIS-132',1237154,66);
+insert into notamateria values('INF-121',22345200,25);
+insert into notamateria values('MAT-124',22345200,78);
+insert into notamateria values('FIS-132',1234599,66);
+select
+(SELECT count(i.LugarResidencia) FROM identificador i, notamateria n where n.CI=i.CI and n.Nota>=51 and i.LugarResidencia='01')as chq,
+(SELECT count(i.LugarResidencia) FROM identificador i, notamateria n where n.CI=i.CI and n.Nota>=51 and i.LugarResidencia='02')as lpz,
+(SELECT count(i.LugarResidencia) FROM identificador i, notamateria n where n.CI=i.CI and n.Nota>=51 and i.LugarResidencia='03')as cba,
+(SELECT count(i.LugarResidencia) FROM identificador i, notamateria n where n.CI=i.CI and n.Nota>=51 and i.LugarResidencia='04')as oru,
+(SELECT count(i.LugarResidencia) FROM identificador i, notamateria n where n.CI=i.CI and n.Nota>=51 and i.LugarResidencia='05')as pot,
+(SELECT count(i.LugarResidencia) FROM identificador i, notamateria n where n.CI=i.CI and n.Nota>=51 and i.LugarResidencia='06')as trj,
+(SELECT count(i.LugarResidencia) FROM identificador i, notamateria n where n.CI=i.CI and n.Nota>=51 and i.LugarResidencia='07')as sc,
+(SELECT count(i.LugarResidencia) FROM identificador i, notamateria n where n.CI=i.CI and n.Nota>=51 and i.LugarResidencia='08')as ben,
+(SELECT count(i.LugarResidencia) FROM identificador i, notamateria n where n.CI=i.CI and n.Nota>=51 and i.LugarResidencia='09')as pnd;
