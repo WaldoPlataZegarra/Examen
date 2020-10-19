@@ -1,0 +1,118 @@
+#cabecera{
+    background: url("imagenes/fondo.jpg")#000;
+	height: 190px;
+	width: 300px;
+    }
+	#fondo{
+	width:200px;
+	height:50px;
+	color:#FFF;
+	
+	}
+	.Pink{
+		background-color:pink;
+	width:200px;
+	height:100px;
+	color:#FFF;
+	}
+	.Blue{
+		background-color:blue;
+	width:200px;
+	height:100px;
+	color:#FFF;
+	}
+	.Green{
+		background-color:green;
+	width:200px;
+	height:100px;
+	color:#FFF;
+	}
+	
+	#cabecera12345678
+{
+	background: url("imagenes/12345678.jpg")#000;
+	width:100px;
+	height: 100px;
+	color:#FFF;
+	
+}
+
+	#cabecera87654321
+{
+	background: url("imagenes/87654321.jpg")#000;
+	width: 100px;
+	height: 100px;
+	color:#FFF;
+	float:left;
+}
+
+	#cabecera12378956
+{
+	background: url("imagenes/12378956.jpg")#000;
+	width: 100px;
+	height: 100px;
+	color:#FFF;
+	float:left;
+}
+
+	#cabecera12345600
+{
+	background: url("imagenes/12345600.jpg")#000;
+	width: 100px;
+	height: 100px;
+	color:#FFF;
+	float:left;
+}
+
+	#cabecera1234567
+{
+	background: url("imagenes/1234567.jpg")#000;
+	width: 100px;
+	height: 100px;
+	color:#FFF;
+	float:left;
+}
+
+	#cabecera12345777
+{
+	background: url("imagenes/12345777.jpg")#000;
+	width:100px;
+	height: 100px;
+	color:#FFF;
+	float:left;
+}
+
+	#cabecera876545158
+{
+	background: url("imagenes/876545158.jpg")#000;
+	width:100px;
+	height: 100px;
+	color:#FFF;
+	float:left;
+}
+
+	#cabecera1237154
+{
+	background: url("imagenes/1237154.jpg")#000;
+	width:100px;
+	height: 100px;
+	color:#FFF;
+	float:left;
+}
+	#cabecera22345200
+{
+	background: url("imagenes/22345200.jpg")#000;
+	width:100px;
+	height: 100px;
+	color:#FFF;
+	float:left;
+}
+	#cabecera1234599
+{
+	background: url("imagenes/1234599.jpg")#000;
+	width:100px;
+	height: 100px;
+	color:#FFF;
+	float:left;
+}
+
