@@ -28,7 +28,7 @@
 		echo "<option class='Green'>green</option>";
 		echo "</select>";
 		echo "<button onclick='colorE()'>aceptar</button>";
-		echo "<div id='fondo'>";
+		echo "<div class='fondo'>";
 		$id=$_SESSION['username'];
 		$sql = "SELECT * FROM identificador WHERE ci='$id'";
 		$resultado = mysqli_query($conn, $sql);
